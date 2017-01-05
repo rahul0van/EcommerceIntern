@@ -41,15 +41,12 @@
                 <img class="img-responsive" src="\DemoEcommerce\public\images\{{$product->image}}" alt="">
                 <div class="overlay">
                     <h2>{{ $product->productname}}</h2>
-                    <a class="info" href="#">View Details</a>
+                    <a class="info" href="{{ route('products.show', $product->p_id) }}">View Details</a>
                 </div>
 
             </div>
-            <div "col-md-4">
-                <h4>   Price: <span class="label label-default">NRS {{$product->price}}</span></h4>
-                <button type="button" class="btn btn-default btn-sm">
-                    <span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart
-                </button>
+            <div class="col-md-4">
+                <h4>   Price: <span class="label label-default">USD {{$product->price}}</span></h4>
             </div>
 
 

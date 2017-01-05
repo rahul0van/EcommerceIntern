@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
 use Validator;
 use Image;
+use DB;
+//use App\Http\Controllers\Controller;
 
 class ProductsController extends Controller
 {
@@ -121,6 +123,10 @@ class ProductsController extends Controller
     public function show($p_id)
     {
         //
+        //dd("$id");
+        $product = DB::table('products')->where('p_id', '=', $p_id)->get();
+        return view('productdetail')-> with('product',$product);
+        //dd("$product");
 
     }
 

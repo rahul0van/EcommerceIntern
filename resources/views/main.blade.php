@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Product</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset('css/hover.css')}}"/>
@@ -24,12 +23,12 @@
         </div>
     </header>
     @yield('content')
-        <footer>
-            <div id="copyright text-right">© Copyright 2016 DemoEcommerce</div>
-        </footer>
     </div>
         <div class="col-sm-2"></div>
     </div>
+    <footer>
+        <div id="copyright text-right">© Copyright 2016 DemoEcommerce</div>
+    </footer>
 
 </div>
 

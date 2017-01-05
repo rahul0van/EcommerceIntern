@@ -19,4 +19,4 @@ Route::get('/', function () {
 });
 */
 Route::resource('products', 'ProductsController');
-Route::resource('login', 'LoginController');
+Route::resource('payment', 'BuyController');
